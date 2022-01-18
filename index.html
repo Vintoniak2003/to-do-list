@@ -1,0 +1,45 @@
+
+		<link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="span-wrapper">
+            <span class="logo">Список справ</span>
+        </div>
+        <div class="new-task">
+            <input type="text" placeholder="Нова справа..." />
+            <button id="push">Додати</button>
+        </div>
+        <div class="tasks">
+            <h1 id="no-msg" style="display: none;">
+                <i class="fas fa-comment-slash"></i>
+                <span>У вас ще немає запланованих справ</span>
+            </h1>
+            <div class="loader__wrapper">
+                <img class="loader" src="#" alt="">
+            </div>
+            <div class="tasks__inner" style="display: none;">
+                <div class="do" >
+                    <h1 class="title"><i class="fas fa-list-ul"></i><span>Завдання<span></h1>
+                </div>
+                <div class="progress">
+                    <h1 class="title"><i class="fas fa-spinner"></i><span>Робляться<span></h1>
+                </div>
+                <div class="done">
+                    <h1 class="title"><i class="fas fa-tasks"></i><span>Готово<span></h1>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
